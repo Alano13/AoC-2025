@@ -12,7 +12,8 @@ common common-options
     -Wall
 
   build-depends:
-    base ^>=4.18.0.0
+    base ^>=4.18.0.0,
+    split ^>=0.2.5,
 
 library
   import: common-options
@@ -20,9 +21,11 @@ library
   exposed-modules:
     Days.Day01
     Days.Day02
+    Days.Day03
 
   build-depends:
-    base
+    base,
+    split,
 
 executable aoc
   import: common-options
@@ -31,3 +34,4 @@ executable aoc
   build-depends:
     aoc,
     base,
+    split,
