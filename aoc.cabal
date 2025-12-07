@@ -25,9 +25,11 @@ library
     Days.Day04
     Days.Day05
     Days.Day06
+    Days.Day07
 
   build-depends:
     base,
+    containers ^>=0.6.7,
     split,
 
 executable aoc
