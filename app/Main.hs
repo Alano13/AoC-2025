@@ -4,6 +4,8 @@ import Days.Day01 qualified as D01
 import Days.Day02 qualified as D02
 import Days.Day03 qualified as D03
 import Days.Day04 qualified as D04
+import Days.Day05 qualified as D05
+import Days.Day06 qualified as D06
 import System.Environment (getArgs)
 
 -- cabal run aoc -- 1 inputs/day01.txt
@@ -27,4 +29,6 @@ runDay n input = case n of
   2 -> Right (D02.solve1 input, D02.solve2 input)
   3 -> Right (D03.solve1 input, D03.solve2 input)
   4 -> Right (D04.solve1 input, D04.solve2 input)
+  5 -> Right (D05.solve1 input, D05.solve2 input)
+  6 -> Right (D06.solve1 input, D06.solve2 input)
   _ -> Left ("Unknown day: " <> show n)
